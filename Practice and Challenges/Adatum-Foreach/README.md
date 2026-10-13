@@ -17,7 +17,7 @@
 
 **Answer:** `$computers` contains the entire collection. `$computer` represents one computer name at a time during each loop iteration.
 
-**Lab VM Validation:** Pending execution on LON-CL1.
+**Validation:** Successfully executed on my personal Windows PC. The foreach loop displayed all three computer names (LON-CL1, LON-DC1, and LON-SVR1) in the correct order without errors.
 
 
 ---
@@ -37,7 +37,7 @@
 
 **Reflection:** Creating an FQDN does not verify that a computer exists or is reachable. This script only combines strings.
 
-**Lab VM Validation:** Pending execution on LON-CL1.
+**Validation:** Successfully executed on my personal Windows PC. The foreach loop generated all three fully qualified domain names using the Adatum.com domain without errors.
 
 
 ---
@@ -59,6 +59,6 @@
 
 **Answer:** Service status can differ because computers have different configurations, installed software, startup settings, and active workloads. Some services start automatically, while others run only when needed.
 
-**Lab VM Validation:** Pending execution on LON-CL1.
+**Validation:** Successfully executed on my personal Windows PC. The foreach loop retrieved and displayed the Name and Status of all three Windows services (EventLog, W32Time, and Spooler) without errors.
 
 

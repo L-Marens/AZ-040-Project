@@ -108,5 +108,29 @@
 **Execution Environment:** Personal Windows PC using PowerShell and Visual Studio Code.
 
 
+---
+
+## Challenge 06 - Flag Local Services for Review
+
+**Run Location:** Personal Windows PC (PowerShell in VS Code)
+
+**Purpose:** Use Get-Service, foreach, and if/else statements to identify Windows services that are not currently running.
+
+**Observed Result:**
+- EventLog: [Enter OK or REVIEW and actual status]
+- W32Time: [Enter OK or REVIEW and actual status]
+- Spooler: [Enter OK or REVIEW and actual status]
+- Total Services for Review: [Enter actual count]
+
+**Validation:** Successfully executed on my personal Windows PC. The foreach loop checked all three services, correctly classified each as OK or REVIEW based on its current status, and displayed a REVIEW count matching the number of non-running services.
+
+**Reflection Question:** Why is a stopped service not always a fault?
+
+**Answer:** Some Windows services are configured to start manually or only when needed. A stopped service may be functioning as intended, depending on its startup configuration and whether the computer currently requires it.
+
+**Execution Environment:** Personal Windows PC using PowerShell and Visual Studio Code.
+
+
+
 
 

@@ -62,3 +62,24 @@
 **Validation:** Successfully executed on my personal Windows PC. The foreach loop retrieved and displayed the Name and Status of all three Windows services (EventLog, W32Time, and Spooler) without errors.
 
 
+---
+
+## Challenge 04 - Count Local Services
+
+**Run Location:** Personal Windows PC (local practice)
+
+**Purpose:** Use Get-Service and a foreach loop to display every local Windows service name and maintain a counter.
+
+**Observed Result:**
+- Total Services: [ENTER YOUR ACTUAL TOTAL]
+
+**Validation:** Successfully executed on my personal Windows PC. The foreach loop displayed each local service name and counted the total number of services. The final counter matched the Count property of the captured service array.
+
+**Reflection Question:** What happens if you reset the counter inside the loop?
+
+**Answer:** Resetting the counter to zero inside the foreach loop would cause the counter to restart with every iteration. Instead of accumulating the total number of services, it would finish at 1 if the collection contains at least one service.
+
+**Validation:** Successfully executed on my personal Windows PC. The foreach loop displayed each local Windows service name and counted the total number of services. The final counter matched the Count property of the captured service array.
+
+
+

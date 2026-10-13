@@ -39,3 +39,26 @@
 
 **Lab VM Validation:** Pending execution on LON-CL1.
 
+
+---
+
+## Challenge 03 - Inspect Local Services
+
+**Run Location:** Personal Windows PC (local practice)
+
+**Purpose:** Use Get-Service and a foreach loop to inspect EventLog, W32Time, and Spooler without modifying their configuration.
+
+**Observed Result:**
+- EventLog: [Enter actual status]
+- W32Time: [Enter actual status]
+- Spooler: [Enter actual status]
+
+**Validation:** The script retrieved each available service and displayed its actual Name and Status.
+
+**Reflection Question:** Why can service status differ between two students?
+
+**Answer:** Service status can differ because computers have different configurations, installed software, startup settings, and active workloads. Some services start automatically, while others run only when needed.
+
+**Lab VM Validation:** Pending execution on LON-CL1.
+
+

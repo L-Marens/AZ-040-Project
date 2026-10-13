@@ -82,4 +82,31 @@
 **Validation:** Successfully executed on my personal Windows PC. The foreach loop displayed each local Windows service name and counted the total number of services. The final counter matched the Count property of the captured service array.
 
 
+---
+
+## Challenge 05 - Read the Domain Computer Inventory
+
+**Run Location:** Personal Windows PC (PowerShell in VS Code)
+
+**Purpose:** Use the ActiveDirectory PowerShell module and a foreach loop to retrieve computer account information from the Adatum.com domain.
+
+**Implementation:**
+- Imported the ActiveDirectory module.
+- Created an array containing LON-CL1, LON-DC1, and LON-SVR1.
+- Used foreach to process each computer name.
+- Used Get-ADComputer with -Identity, -Server, and -Properties OperatingSystem.
+- Configured the script to display Name, DNSHostName, and OperatingSystem.
+
+**Observed Result:** The ActiveDirectory PowerShell module was not available on my personal Windows PC when checked using Get-Module -ListAvailable ActiveDirectory.
+
+**Validation:** The script was written according to the assignment requirements. Live Active Directory queries could not be validated because the required module was not installed and access to the Adatum domain has not been established. Successful execution remains unverified.
+
+**Reflection Question:** Is this a live operating system query or directory information?
+
+**Answer:** This is directory information retrieved from Active Directory. The OperatingSystem property represents information stored in the computer account and may not reflect the machine's current operating system.
+
+**Execution Environment:** Personal Windows PC using PowerShell and Visual Studio Code.
+
+
+
 
